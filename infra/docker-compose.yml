@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # Relational Database for maintaining configurations and metadata
   postgres:
@@ -61,7 +59,7 @@ services:
 
   # Spark Master Node for managing distributed data processing
   spark-master:
-    image: bitnami/spark:3.4
+    image: bitnamilegacy/spark:latest
     container_name: aml_spark_master
     environment:
       - SPARK_MODE=master
@@ -73,7 +71,7 @@ services:
 
   # Spark Worker Node for executing processing tasks
   spark-worker:
-    image: bitnami/spark:3.4
+    image: bitnamilegacy/spark:latest
     container_name: aml_spark_worker
     depends_on:
       - spark-master
