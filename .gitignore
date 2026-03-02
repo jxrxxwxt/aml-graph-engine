@@ -1,0 +1,36 @@
+# Environment variables and secrets
+.env
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Log files
+*.log
+
+# IDE and OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Testing and coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data and output directories (to prevent committing large simulated data)
+data/
+output/
+
+# Apache Spark specific temporary files
+spark-warehouse/
+metastore_db/
+derby.log
