@@ -7,3 +7,6 @@ numpy>=1.26.0
 pandas>=2.1.0
 pyspark==3.5.1
 neo4j
+streamlit 
+matplotlib
+plotly
